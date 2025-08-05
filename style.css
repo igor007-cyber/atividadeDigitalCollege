@@ -73,8 +73,38 @@ h2{
     box-shadow: 0 4px 8px rgb(0, 255, 0);
 }
 
-.Portifolio{
-    
+.Portifolio {
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+    list-style: none;
+    padding: 30px; 
+    margin: 20px 0; 
+    border-radius: 15px; 
 }
 
+.Portifolio li {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px;
+}
 
+.Portifolio li:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+.Portifolio img {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    width: 100px; 
+    height: 100px;
+}
+
+.Portifolio img:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.Portifolio a:hover img {
+    filter: brightness(1.1);
+
+}
