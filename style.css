@@ -3,8 +3,92 @@
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-    background-color: rgb(20, 14, 14);
 }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: rgb(20, 14, 14);
+    background-size: 100% 50px;
+    color: #f9f9f9;
+}
+
+/* Animação das linhas */
+@keyframes linhasMove {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 50px; }
+}
+
+/* Seção principal */
+section.metas {
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 900px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section.metas:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.8);
+}
+
+/* Títulos */
+section.metas h3 {
+    font-size: 1.8rem;
+    border-bottom: 3px solid #07C472;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+section.metas h4 {
+    font-size: 1.2rem;
+    color: #f9f9f9;
+    margin-top: 15px;
+}
+
+/* Texto */
+section.metas p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Listas */
+section.metas ul {
+    list-style: none;
+    padding: 0;
+}
+
+section.metas ul li {
+    background: rgba(255, 255, 255, 0.05);
+    margin: 5px 0;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+section.metas ul li:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateX(5px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    section.metas {
+        padding: 15px;
+    }
+    section.metas h3 {
+        font-size: 1.4rem;
+    }
+    section.metas h4 {
+        font-size: 1rem;
+    }
+}
+
 
 header{
     width: 100%;
@@ -68,7 +152,7 @@ h2{
 }
 
 .foto {
-    border-radius: 10px;
+    border-radius: 100px;
     object-fit: cover;
     box-shadow: 0 4px 8px rgb(0, 255, 0);
 }
@@ -107,4 +191,53 @@ h2{
 .Portifolio a:hover img {
     filter: brightness(1.1);
 
+}
+
+.rodape {
+    background-color: #000;
+    background-image: repeating-linear-gradient(
+        90deg,
+        rgba(255,255,255,0.05) 0px,
+        rgba(255,255,255,0.05) 1px,
+        transparent 1px,
+        transparent 4px
+    );
+    background-size: 50px 100%;
+    animation: linhasRodape 6s linear infinite;
+    padding: 20px 0;
+    text-align: center;
+    color: #f9f9f9;
+    font-size: 0.9rem;
+    border-top: 2px solid #07C472;
+}
+
+@keyframes linhasRodape {
+    0% { background-position: 0 0; }
+    100% { background-position: 50px 0; }
+}
+
+.conteudo-rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-links a {
+    color: #07C472;
+    font-size: 1.4rem;
+    margin: 0 8px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #FCDA00;
+    transform: scale(1.2);
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .conteudo-rodape {
+        font-size: 0.8rem;
+    }
 }
