@@ -7,26 +7,89 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Produtos</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="container">
+            <img class="logo" src="https://images.ctfassets.net/s5n2t79q9icq/3dB5uyWzUH95O1ZPBNNUX5/6cff7c65a809285755ea24b164b6ac65/magic-logo.png" alt="logo">
 
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">incio</a></li>
+                    <li><a href="#">sobre</a></li>
+                    <li><a href="#">informações</a></li>
+                </ul>
+            </nav>
+        </div>
 
     </header>
 
     <main>
-        <section>
+        <section class="content">
+             <iframe class="video1" id="videoPlayer" src="https://www.youtube.com/embed/KzwBF7CNSOA?si=rihFjlFUKFpxQATx&autoplay=1&mute=1&loop=1&playlist=KzwBF7CNSOA&controls=0&modestbranding=1&rel=0&showinfo=0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+        </section>
 
+        <section class="sobre">
+<iframe class="video2"  width="388" height="590" src="https://www.youtube.com/embed/AuV6B3vOn6M?autoplay=1&mute=1&loop=1&playlist=AuV6B3vOn6M&controls=0&modestbranding=1&rel=0&showinfo=0" title="Magic: The Gathering" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
+            <div class="texto">
+                <h1>Sobre o jogo:</h1>
+                <p>Magic: The Gathering é um jogo de cartas colecionáveis criado por Richard Garfield e publicado pela Wizards of the Coast. Lançado em 1993, é amplamente reconhecido como o primeiro jogo de cartas colecionáveis do mundo. O jogo combina estratégia, habilidade e sorte, permitindo que os jogadores construam seus próprios baralhos de cartas e enfrentem adversários em batalhas épicas.
+
+                    Cada jogador assume o papel de um Planeswalker, um poderoso mago capaz de viajar entre diferentes planos de existência. O objetivo do jogo é reduzir os pontos de vida do oponente a zero, utilizando uma variedade de cartas que representam criaturas, feitiços, artefatos e terrenos.
+                    
+                    As cartas são divididas em cinco cores principais: branco, azul, preto, vermelho e verde, cada uma com suas próprias características e estilos de jogo. Os jogadores podem combinar cartas de diferentes cores para criar estratégias únicas e surpreendentes.
+                    
+                    Magic: The Gathering é conhecido por sua profundidade estratégica e complexidade, oferecendo uma experiência desafiadora tanto para iniciantes quanto para jogadores experientes. O jogo também possui um cenário competitivo vibrante, com torneios locais e internacionais que atraem jogadores de todo o mundo.
+                    
+                    Além do aspecto competitivo, Magic: The Gathering também é apreciado por sua rica lore e narrativa, com expansões regulares que introduzem novos personagens, histórias e mundos para os jogadores explorarem.
+                    
+                    Com milhões de jogadores em todo o mundo e uma comunidade ativa, Magic: The Gathering continua a ser um dos jogos de cartas mais populares e influentes da história.</p>
+            </div>
+        </section>
+
+        <section class="conteudo2">
+            <div class="caixa">
+                <img style="width: 250px; height: 350px;" src="https://cards.scryfall.io/normal/front/d/0/d0d33d52-3d28-4635-b985-51e126289259.jpg?1599707796" alt="Atraxa, Praetors' Voice">
+                <p>Cartas</p>
+            </div>
+            <div class="caixa">
+                <img style="width: 250px; height: 350px;" src="https://tse4.mm.bing.net/th/id/OIP.PHkfhml5_rLmJMrCeyDUdAHaL7?pid=ImgDet&w=197&h=317&c=7&dpr=1,1&o=7&rm=3" alt=" Duskmourn: House of Horro">
+                <p>Decks</p>
+            </div>
+            <div class="caixa">
+                <img src="https://images.ctfassets.net/s5n2t79q9icq/1U86zdrRV73Q2XoPyynKm7/1faaf2289b633e43855c5866f5a0e33b/image.jpg?w=500&fm=webp" alt="Torneios">
+                <p>Torneios</p>
+            </div>
+        </section>
+
+        <section class="formulario">
+            <h1>Receba novidades do Magic the Gathering</h1>
+            <form action="#">
+                <input style="margin-bottom: 10px;" type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <button type="submit">Enviar</button>
+            </form>
+
+        </section>
+
+        <section class="final">
+            <div>
+             <h1>Venha jogar Magic: The Gathering!</h1>
+             <img src="https://images.ctfassets.net/s5n2t79q9icq/2NF0ycrdWDfHKxl9HUDw7y/9e611525ea6dc142498d06ab253ab0e3/WOTC-1182.jpg?w=500&fm=webp" alt="">
+            </div>
+            <p>Junte-se a milhões de jogadores ao redor do mundo e descubra a emoção de Magic: The Gathering. Construa seu baralho, desafie seus amigos e participe de torneios épicos. Seja você um iniciante ou um veterano, há sempre algo novo para aprender e explorar neste jogo fascinante. Prepare-se para uma aventura mágica!</p>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Minha Empresa</p>
+    <footer class="rodape">
+        <h3>Links importantes:</h3>
+        <ul>
+            <li><a href="https://edhrec.com/commanders">Cartas</a></li>
+            <li><a href="https://www.ligamagic.com.br/?view=dks/decks">Decks</a></li>
+            <li><a href="https://spelltable.wizards.com/?_gl=1*1awxpmh*_gcl_au*ODE1NTE5MTMxLjE3NTczMzc1ODk.*FPAU*MTYyNTE2MzE0MC4xNzU3MzM3Mzg2*_ga*MTQwOTMxODQwMC4xNzU3MzM3Mzgx*_ga_X145Z177LS*czE3NTc0MjUyNTAkbzQkZzEkdDE3NTc0MjU0OTckajU4JGwwJGg3NjI4ODczMTA.*_fplc*SjFBam1SV1lhRXdCcVZPQlV5NFdxM2JzUjdhSXN5ZVVHcExNQ1I4Q1V5UkdlaUJtcXZ3VWtlQUVOMWlJN1dlRHRnNk84JTJCY2xMdERBV1puN3NGczlXbzF2UVQzTGdncFNXU3ViN2hwcm1QVjFBZGxpcUZZbFByNmxQTEtOa0ElM0QlM0Q.">Torneios</a></li>
+            <li><a href="https://www.ligamagic.com.br/?view=dks/novo">Monte seu deck</a></li>
+        </ul>
+        <img class="logo" src="https://images.ctfassets.net/s5n2t79q9icq/3dB5uyWzUH95O1ZPBNNUX5/6cff7c65a809285755ea24b164b6ac65/magic-logo.png" alt="logo">
+
+
     </footer>
 </body>
 </html>
